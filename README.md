@@ -20,18 +20,7 @@ My personal opinion (**THIS DOES NOT MEAN IT IS 100% CORRECT**): no, you cannot 
 ---
 
 **Advanced AutoBhop Application for CS2**, written in C#.  
-Fully open-source, with no direct memory reading. Configuration is done **in the application console**.
-
----
-
-## Installation and Launch
-
-1. Go to the release page:  
-   → Download the latest version (YAW)
-2. Download the file `AutoBhop.exe`.
-3. Run `AutoBhop.exe`.  
-   - The application will automatically configure itself for your system.  
-   - A console window will open with status information and configuration options.
+Fully open source, with no direct memory reading. Configuration is done **in the application console**.
 
 ---
 
