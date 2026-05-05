@@ -1,9 +1,11 @@
-# CS2DYNA
+# CS2DYNA (C#) (Fixed?: Yes, but I don’t know when it was fixed.)
 CS2 Bhop script that turns Csharp code to an functional exe.
-# CS2 AutoBhop (C#) (Fixed?: Yes, but I don’t know when it was fixed.)
 
 # READ THIS
 **IMPORTANT:** if your config doesn’t load automatically, use "**exec autoexec**" in the console or "**-exec autoexec**" in the game launch options.
+
+YOU NEED .NET 8.0 SDK to make the exe.
+you can download it from (here[https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-8.0.420-windows-x64-installer])
 
 **Ported from AHK (which used Tweek) to C# because many people were getting errors.**  
 I set the default settings to what worked for me. They worked on my system, but things like "FPS change, jumping, etc." might not work for you. I recommend checking. If everything works fine, leave it as is. If not, edit the config yourself. Press Insert in the app and rebind keys so they work for YOU. It’s possible some keys are already in use, etc. Make everything unique to your setup.  
@@ -35,6 +37,15 @@ Fully open source, with no direct memory reading. Configuration is done **in the
 
 ---
 
+## Project Structure/ install
+
+- `AutoBhop.sln` — C# solution (Visual Studio)
+- `AutoBhop/AutoBhop.csproj` — project with source code
+- `build.bat` — build script (if needed)
+- `README.md` — this file
+
+---
+
 ## Quick Start for Users
 
 1. Download and run the `.exe`.
@@ -42,15 +53,6 @@ Fully open source, with no direct memory reading. Configuration is done **in the
 3. Press **Insert** to configure.
 4. After configuration—minimize the console (or leave it open) and launch CS2.  
    — Autobhop will work automatically, set up in just two steps.
-
----
-
-## Project Structure
-
-- `AutoBhop.sln` — C# solution (Visual Studio)
-- `AutoBhop/AutoBhop.csproj` — project with source code
-- `build.bat` — build script (if needed)
-- `README.md` — this file
 
 ---
 
