@@ -1,0 +1,28 @@
+namespace CS2AutoBhop
+{
+    internal static class Program
+    {
+        [STAThread]
+        static void Main()
+        {
+            AllocConsole();
+            Console.Title = "CS2 AutoBhop Debug Console";
+
+            try
+            {
+                var bhop = new ConsoleCS2AutoBhop();    
+                bhop.Run();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"❌ Critical error: {ex.Message}");
+                Console.WriteLine("Press any key...");
+                Console.ReadKey();
+            }
+        }
+
+        [System.Runtime.InteropServices.DllImport("kernel32.dll", SetLastError = true)]
+        [return: System.Runtime.InteropServices.MarshalAs(System.Runtime.InteropServices.UnmanagedType.Bool)]
+        static extern bool AllocConsole();
+    }
+}
